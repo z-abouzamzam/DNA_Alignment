@@ -1,4 +1,3 @@
-README.md
 
 **DNA Alignment**
 =
