@@ -1,0 +1,31 @@
+Align Outline
+
+Basically start with two strings
+first substr - remove a character from the beginning of the second string
+second substr - remove a character from both strings
+third substr - remove a character from the first string
+
+then recursively call the function on the remaining characters of each string
+once you get to the last character of each string base cases will be called
+
+base cases:
+    both strings empty:
+        in this case, return a generic align result with no character and a zero 
+        score
+    
+    one string empty:
+        return an align result with a -5 * number of characters in other string
+        score, and a string consiting of number of s's or t's left over
+
+now, after recusion:
+need to add score values to first, second, and third substrings for each answer
+also need to add character to each substring answer
+
+now let answer equal the answer with the lowest score
+
+notes:
+at the beginning of the function, it will check if the configuration is in
+the saved checks and return that score.
+
+for every new configuration, at the end of each iteration the function will
+save the configuration and score
